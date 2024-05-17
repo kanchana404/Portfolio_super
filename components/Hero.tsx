@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-           Let's Make Something Great
+           Let&apos;s Make Something Great
           </h2>
 
           <TextGenerateEffect 
@@ -36,7 +36,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I'm Kavitha, a Fullstack Web Developer based in Sri Lanka
+            Hi, I&apos;m Kavitha, a Fullstack Web Developer based in Sri Lanka
           </p>
           <a href="https://www.linkedin.com/in/kavitha-kanchana">
             <MagicButton 
