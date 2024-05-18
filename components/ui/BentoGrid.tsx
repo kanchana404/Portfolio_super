@@ -1,7 +1,8 @@
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientAnimation";
-import { Globe } from "./Globe";
+
 import GridGlobe from "./GridGlobe";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 export const BentoGrid = ({
   className,
@@ -98,6 +99,17 @@ export const BentoGridItem = ({
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">{title}</div>
         </div>
         {id == 2 && <GridGlobe  />}
+        {id === 3 && (
+          <div className="flex gap-1 lg:gap-6 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex flex-col gap-3 lg:gap-8">
+              {['React.js', 'Next.js', 'TypeScript'].map((item)=>(
+                <span>
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

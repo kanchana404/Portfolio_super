@@ -36,7 +36,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Kavitha, a Fullstack Web Developer based in Sri Lanka
+            Hi, I&apos;m Kavitha Kanchana, a Fullstack Web Developer based in SriLanka
           </p>
           <a href="https://www.linkedin.com/in/kavitha-kanchana">
             <MagicButton 
