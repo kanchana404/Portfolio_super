@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { FaHome } from "react-icons/fa";
 import Grid from "@/components/Grid";
+import RecentProject from "@/components/RecentProject";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         />
         <Hero />
         <Grid />
+        <RecentProject />
       </div>
     </main>
   );
