@@ -12,14 +12,18 @@ const Approch= () => {
             My <span className="text-purple"> approch</span>
         </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
-        <Card title="Requrement Gathering & Strategy" icon={<AceternityIcon order="Phase 1" />}>
+        <Card title="Requrement Gathering & Strategy" icon={<AceternityIcon order="Phase 1"
+         />}
+         description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste perferendis dolorem soluta fugiat officiis voluptatibus ipsam accusamus sunt temporibus quia,">
           <CanvasRevealEffect
           
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Design and Planning" icon={<AceternityIcon order="Phase 2"/>}>
+        <Card title="Design and Planning" icon={<AceternityIcon order="Phase 2" 
+        />}
+        description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste perferendis dolorem soluta fugiat officiis voluptatibus ipsam accusamus sunt temporibus quia,">
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -32,10 +36,15 @@ const Approch= () => {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card title="Implementation" icon={<AceternityIcon order="Phase 3"/>}>
+        <Card 
+        title="Implementation" 
+        icon={<AceternityIcon order="Phase 3"/>}
+        description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste perferendis dolorem soluta fugiat officiis voluptatibus ipsam accusamus sunt temporibus quia,"
+        >
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
+        
             colors={[[125, 211, 252]]}
           />
         </Card>
@@ -48,10 +57,12 @@ const Card = ({
   title,
   icon,
   children,
+  description,
 }: {
   title: string;
   icon: React.ReactNode;
   children?: React.ReactNode;
+  description:string;
 }) => {
   const [hovered, setHovered] = React.useState(false);
   return (
@@ -77,13 +88,32 @@ const Card = ({
         )}
       </AnimatePresence>
 
-      <div className="relative z-20">
-        <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
+      <div className="relative z-20 px-10">
+        <div
+          // add this for making it center
+          // absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]
+          className="text-center group-hover/canvas-card:-translate-y-4 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+        group-hover/canvas-card:opacity-0 transition duration-200 min-w-40 mx-auto flex items-center justify-center"
+        >
           {icon}
         </div>
-        <h2 className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h2
+          // change text-3xl, add text-center
+          className="dark:text-white text-center text-3xl opacity-0 group-hover/canvas-card:opacity-100
+         relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white 
+         group-hover/canvas-card:-translate-y-2 transition duration-200"
+        >
           {title}
         </h2>
+        {/* add this one for the description */}
+        <p
+          className="text-sm opacity-0 group-hover/canvas-card:opacity-100
+         relative z-10 mt-4 group-hover/canvas-card:text-white text-center
+         group-hover/canvas-card:-translate-y-2 transition duration-200"
+          style={{ color: "#E4ECFF" }}
+        >
+          {description}
+        </p>
       </div>
     </div>
   );
