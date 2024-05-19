@@ -77,6 +77,7 @@ export const projects = [
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://travel-app-lake-gamma.vercel.app/",
+    sname: "Travel App",
   },
   {
     id: 2,
@@ -85,6 +86,7 @@ export const projects = [
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://brainwave-kanchan404.netlify.app/",
+    sname: "Brainwave",
   },
   {
     id: 3,
@@ -93,6 +95,7 @@ export const projects = [
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://nike-clone-kanchan404.netlify.app/",
+    sname: "Nike Clone",
   },
   {
     id: 4,
@@ -101,6 +104,7 @@ export const projects = [
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/ui.apple.com",
+    sname: "Apple UI",
   },
 ];
 
