@@ -19,7 +19,7 @@ const Approch= () => {
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Nisha is Munni" icon={<AceternityIcon order="Phase 2"/>}>
+        <Card title="Design and Planning" icon={<AceternityIcon order="Phase 2"/>}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -32,7 +32,7 @@ const Approch= () => {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card title="Munni is Aditi" icon={<AceternityIcon order="Phase 3"/>}>
+        <Card title="Implementation" icon={<AceternityIcon order="Phase 3"/>}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
